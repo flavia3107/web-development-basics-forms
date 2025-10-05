@@ -1,18 +1,26 @@
+:root {
+  min-height: 100%;
+}
+
 body {
   font-family: sans-serif;
-  background-color: #eee;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+header {
+  margin-bottom: 2rem;
 }
 
 h1 {
   text-align: center;
-  margin: 2rem;
-  color: #526174;
+  margin: 0 auto 1rem;
+  color: #363636;
 }
 
 form {
-  width: 40rem;
+  width: 30rem;
   margin: auto;
-  background-color: #99a4b2;
+  background-color: #363636;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -29,13 +37,16 @@ ul {
 }
 
 label {
-  color: #faf9f9;
+  color: #c8c8c8;
   display: block;
-  margin: 0.5rem 0;
+  margin: 1rem 0 0.2rem;
+  font-size: 0.8rem;
 }
 
 h2 {
   color: #faf9f9;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 input,
@@ -43,7 +54,7 @@ textarea,
 select {
   font: inherit;
   padding: 0.5rem;
-  border: 1px solid rgb(152, 159, 184);
+  border: 1px solid #fff;
   width: 100%;
   display: block;
   border-radius: 4px;
@@ -61,56 +72,63 @@ textarea:focus {
 
 button {
   font: inherit;
-  border: 1px solid #374c66;
-  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  padding: 0.35rem 1rem;
   border-radius: 4px;
   cursor: pointer;
 }
 
 #form-actions {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .btn-filled {
-  background-color: #374c66;
-  color: white;
+  background-color: #ffca52;
+  color: #000000;
 }
 
 .btn-empty {
-  background-color: #d5d9df;
-  color: #374c66;
+  color: #eeeeee;
   font-weight: 600;
+  background: transparent;
   letter-spacing: 0.5px;
+  border: none;
 }
 
 .btn-filled:hover {
-  background-color: #0e1a29;
-  border-color: #0e1a29;
+  background-color: #ffda87;
 }
 
 .btn-empty:hover {
-  background-color: #eee;
+  color: #fff;
 }
 
 .inline-control {
   display: flex;
 }
 
+.flex {
+  display: flex;
+  gap: 2rem;
+}
+
 .inline-control label {
   margin: 0;
-  margin-left: 0.5rem;
+  color: #fff;
 }
 
 .inline-control input {
   width: auto;
+  margin: 0 0.4rem 0 0;
 }
 
 .logo {
-  text-decoration: none;
-  width: 10rem;
+  width: fit-content;
   display: flex;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem 0 0 0.5rem;
 }
 
 .logo > img {

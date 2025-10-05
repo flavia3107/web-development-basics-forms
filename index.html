@@ -17,9 +17,9 @@
         <span>Kosti</span>
       </div>
     </a>
-    <h1>Contact Us</h1>
   </header>
   <main>
+    <h1>Contact Us</h1>
     <form action="/challenge" method="GET">
       <section>
         <h2>How can we help you?</h2>
@@ -36,10 +36,6 @@
             <label for="phone">Your Phone Number</label>
             <input type="tel" id="phone" name="phone" required minlength="5" />
           </li>
-          <li>
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" required minlength="10" maxlength="200" rows="6"></textarea>
-          </li>
         </ul>
       </section>
       <section>
@@ -50,9 +46,9 @@
           <option value="other">Other</option>
         </select>
       </section>
-      <section>
+      <section style="margin-top: 2rem">
         <h2>How should we reply?</h2>
-        <ul>
+        <ul class="flex">
           <li class="inline-control">
             <input type="radio" name="reply" id="reply-phone" value="phone" required />
             <label for="reply-phone">Call me</label>
@@ -67,13 +63,20 @@
           </li>
         </ul>
       </section>
-      <section class="inline-control">
-        <input type="checkbox" name="accept-terms" id="accept-terms" required />
-        <label for="accept-terms">Accept Terms</label>
+      <section style="margin-top: 2rem">
+        <h2>Your Message</h2>
+        <textarea id="message" name="message" required minlength="10" maxlength="200" rows="6"></textarea>
       </section>
+
       <section id="form-actions">
-        <button type="reset" class="btn-empty">Clear</button>
-        <button type="submit" class="btn-filled">Submit</button>
+        <div class="inline-control">
+          <input type="checkbox" name="accept-terms" id="accept-terms" required />
+          <label for="accept-terms">Accept Terms</label>
+        </div>
+        <div>
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="submit" class="btn-filled">Submit</button>
+        </div>
       </section>
     </form>
   </main>
